@@ -1,0 +1,121 @@
+
+body{
+    font-family: sans-serif;
+}
+
+#accueil{
+    background-image: url(https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+    height: 400px;
+    color: white;
+    text-align: center; 
+    font-size: 1.5em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo {
+    align-self: flex-start;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+header #logo img {
+    height: 130px;
+}
+
+header a{
+    color: black;
+}
+
+
+
+
+
+#menu ol{
+    display: flex;
+    font-size: 1.3em;
+    justify-content: space-between;
+    /*width: 90%;*/
+    flex-wrap: wrap;
+}
+
+#menu ol li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+#menu ol li a{
+    /*color: white;*/
+    text-decoration: none;
+}
+
+#menu ol li a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+
+
+.filmsAffiches{
+    display: flex;
+}
+
+.filmsAffiches div {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+#infoAfficher {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+
+#adresseAfficher{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#formulaire{
+    text-align: center;
+}
+
+.titre{
+    text-align: center;
+}
+
+section:nth-of-type(odd){
+    background: #c6C6C6;
+}
+
+section {
+    padding: 15px 0;
+}
+
+footer {
+    background: #c0bebe;
+}
+
+
+@media screen and (max-width: 640px) {
+    #header img {
+      width:100%;
+    }
+}
+
+@media all and (max-width: 1024px){
+
+    header, .filmsAffiches, #infoAfficher, #adresseAfficher{
+        flex-direction: column;
+    }
+
+    #adresseAfficher, #infoAfficher{
+        text-align: center;
+    }
+}
